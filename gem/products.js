@@ -47,9 +47,8 @@
         templateUrl: "product-gallery.html",
         controller: function() {
           this.current = 0;
-          var _this=this;
           this.setCurrent = function(imageNumber){
-            _this.current = imageNumber || 0;
+            this.current = imageNumber || 0;
           };
         },
         controllerAs: "gallery"
